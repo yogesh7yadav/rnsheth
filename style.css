@@ -1,0 +1,119 @@
+/* =====================================
+   Global Styles
+===================================== */
+html {
+  height: 100%;
+  background-color: #fdf6cf;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fdf6cf;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+}
+
+/* =====================================
+   Top Right Links
+===================================== */
+.top-links {
+  text-align: right;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.top-links a {
+  color: #aa2e2e;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.top-links span {
+  color: #aa2e2e;
+}
+
+/* =====================================
+   Header with Logo and Title
+===================================== */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 10px;
+  background-color: #fdf6cf;
+}
+
+header img {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.school-text h1 {
+  color: #aa2e2e;
+  margin: 0;
+  font-size: 28px;
+}
+
+.school-text p {
+  margin: 5px 0 0;
+  font-size: 18px;
+  color: #000;
+}
+
+/* =====================================
+   Main Navigation Bar
+===================================== */
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  padding: 12px 20px;
+  color: #222;
+  background-color: #fdf6cf;
+  text-decoration: none;
+  border-right: 1px solid #aaa;
+  font-weight: bold;
+}
+
+.main-nav a:last-child {
+  border-right: none;
+}
+
+.main-nav a.active {
+  background-color: #aa2e2e;
+  color: white;
+}
+
+.main-nav a:hover {
+  background-color: #910000;
+  color: white;
+}
+
+/* =====================================
+   Green Box Below Navbar
+===================================== */
+.green-box {
+  background-color: #2e7d32; /* Deep green */
+  height: 40px;
+  width: 100%;
+}
+
+/* =====================================
+   Footer
+===================================== */
+.schools-footer {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
