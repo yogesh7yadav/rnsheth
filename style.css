@@ -67,33 +67,40 @@ header img {
 /* =====================================
    Main Navigation Bar
 ===================================== */
-.main-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
-  margin: 0;
+/* Custom navbar background */
+.custom-navbar {
+  background-color: #fdf6cf; /* light yellow */
+  border-radius: 5px;
 }
 
-.main-nav a {
-  padding: 12px 20px;
+/* Navbar link styles */
+.custom-navbar .nav-link {
   color: #222;
-  background-color: #fdf6cf;
-  text-decoration: none;
-  border-right: 1px solid #aaa;
   font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
 }
 
-.main-nav a:last-child {
-  border-right: none;
+/* Add vertical line separator */
+.custom-navbar .nav-link:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: #aaa;
 }
 
-.main-nav a.active {
+/* Hover effect */
+.custom-navbar .nav-link:hover {
   background-color: #aa2e2e;
-  color: white;
+  color: #fff;
 }
 
-.main-nav a:hover {
-  background-color: #910000;
+/* Active link style */
+.custom-navbar .nav-link.active {
+  background-color: #aa2e2e;
   color: white;
 }
 
