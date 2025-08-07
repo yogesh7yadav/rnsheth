@@ -92,8 +92,14 @@ header img {
   background-color: #aaa;
 }
 
-/* Hover effect */
+/* Already present hover effect for desktop */
 .custom-navbar .nav-link:hover {
+  background-color: #aa2e2e;
+  color: #fff;
+}
+
+/* Add this for mobile tap effect */
+.custom-navbar .nav-link:active {
   background-color: #aa2e2e;
   color: #fff;
 }
@@ -124,3 +130,4 @@ header img {
   font-family: Arial, sans-serif;
   text-align: left;
 }
+
