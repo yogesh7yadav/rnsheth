@@ -4,48 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smt. R. N. Sheth Vidyamandir</title>
-  
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
-  
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid px-3">
 
     <!-- Header Section -->
-    <header class="d-flex align-items-center py-3">
-      <img src="images/logo.png" alt="School Logo" class="me-3" />
-      <div class="school-text">
-        <h1 class="mb-0">Smt. R. N. Sheth Vidyamandir</h1>
-        <p class="mb-0">Born for greater things</p>
+    <header class="d-flex flex-column flex-md-row align-items-center py-3">
+      <img src="images/logo.png" alt="School Logo" class="img-fluid me-md-3 mb-2 mb-md-0" style="max-height: 80px;" />
+      <div class="school-text text-center text-md-start">
+        <h1 class="mb-0 fs-3">Smt. R. N. Sheth Vidyamandir</h1>
+        <p class="mb-0 fs-5">Born for greater things</p>
       </div>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav class="main-nav my-3">
-      <a class="active" href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">ADMISSIONS</a>
-      <a href="#">SCHOOL LIFE</a>
-      <a href="#">CIRCULARS</a>
-      <a href="#">NEWS</a>
-      <a href="#">CONTACT</a>
+    <!-- Responsive Navbar using Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light my-3 rounded">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ADMISSIONS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">SCHOOL LIFE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">CIRCULARS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <!-- Green Box Section -->
-    <div class="green-box mb-4">
-      <!-- Optional content here -->
-    </div>
+    <!-- Green Box -->
+    <div class="green-box mb-4"></div>
 
-    <!-- Carousel Section -->
+    <!-- Carousel -->
     <div id="schoolCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-      
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -54,31 +58,30 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="slide/image1.jpg" class="d-block w-100" alt="Slide 1">
+          <img src="slide/image1.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
         </div>
         <div class="carousel-item">
-          <img src="slide/image2.jpg" class="d-block w-100" alt="Slide 2">
+          <img src="slide/image2.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
         </div>
         <div class="carousel-item">
-          <img src="slide/image3.jpg" class="d-block w-100" alt="Slide 3">
+          <img src="slide/image3.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
         </div>
       </div>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon"></span>
         <span class="visually-hidden">Previous</span>
       </button>
 
       <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon"></span>
         <span class="visually-hidden">Next</span>
       </button>
-
     </div>
 
     <!-- Footer -->
     <footer class="schools-footer text-white py-3 px-3 mt-4">
-      &copy;2025 Smt. R. N. Sheth Vidyamandir (English Medium), Near Amboli Level Crossing, Andheri (East), Golden Past, Mumbai - 400 060, India. 
+      &copy;2025 Smt. R. N. Sheth Vidyamandir (English Medium), Near Amboli Level Crossing, Andheri (East), Golden Past, Mumbai - 400 060, India.
       Telephone: xxxxxxxx
     </footer>
 
